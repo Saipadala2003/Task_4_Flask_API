@@ -1,0 +1,15 @@
+TASK 5 - API TESTING AND VALIDATION
+
+Test cases:
+TC-01 API Health Check: 3/3 PASS - HTTP 200
+TC-02 Valid Prediction: 4/4 PASS - HTTP 200
+TC-03 Missing Input Data: 3/3 PASS - HTTP 400
+TC-04 Incorrect Pixel Count: 3/3 PASS - HTTP 400
+
+Overall: 13/13 PASS
+Errors: 0
+
+Expected valid response structure:
+{"status":"success","predicted_digit":7,"confidence":0.999976396560669}
+
+Note: The exact predicted digit/confidence depends on the MNIST input used during execution. The Postman collection validates the response structure and valid ranges.
